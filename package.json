@@ -13,7 +13,10 @@
     "android-staging-release": "cd android && ./gradlew assembleStagingRelease && cd app/build/outputs/apk && open .",
     "android-production": "react-native run-android --variant=productionDebug ",
     "android-production-release": "cd android && ./gradlew assembleProductionRelease && cd app/build/outputs/apk && open .",
-    "clean": "cd android && ./gradlew clean && cd .."
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "ios-dev": "npx react-native run-ios --scheme DemoWithEnvsDevelopment",
+    "ios-staging": "npx react-native run-ios --scheme DemoWithEnvsStaging",
+    "ios-prod": "npx react-native run-ios --scheme DemoWithEnvs"
   },
   "dependencies": {
     "react": "17.0.2",
